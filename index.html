@@ -12,6 +12,10 @@
     <!-- Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 
+    <!--- Materialize icon font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
     <script src="js/js.js"></script>
 </head>
 <body>
@@ -19,19 +23,27 @@
         <nav>
             <div class="nav-wrapper teal">
                 <span class="left brand-logo">Heath McClanahan</span>
-                <ul class="right">
+                <a href="#" data-target="left-menu" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
                     <li><a href="#">About Me</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
                 </ul>
             </div>
         </nav>
     </div>
+    <ul class="sidenav" id="left-menu">
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+    </ul>
     <main>
 
     </main>
-    <footer>
-
+    <footer class="footer-copyright  teal">
+        <div class="container center">
+                © Heath McClanahan
+        </div>
     </footer>
 </body>
 </html>
