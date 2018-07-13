@@ -9,13 +9,12 @@ $(document).ready(function(){
   $(document).ready(function(){
     $('.scrollspy').scrollSpy();
   });
-
-  printProject("Title", "Cool description", "http://zombievision.net");
+  for(let value in projectList){
+    printProject(projectList[value].title, projectList[value].description, projectList[value].url, projectList[value].github);
+  };
 });
 
-const projectList = [];
-
-function printProject(title, description, url){
+function printProject(title, description, url, github){
   let newProject = '<div class="col s12 m6">'+
     '<div class="card teal">'+
         '<div class="card-action teal lighten-2">'+
@@ -23,6 +22,7 @@ function printProject(title, description, url){
         '</div>'+
         '<div class="card-content">'+
             description+
+            '<br /><a target="_blank" class="waves-effect waves-teal btn-flat" href="'+github+'">GitHub</a>'+
         '</div>'+
     '</div>'+
   '</div>"'
