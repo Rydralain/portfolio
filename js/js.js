@@ -25,7 +25,7 @@ function printProject(title, description, url, github){
             '<br /><a target="_blank" class="waves-effect waves-teal btn-flat" href="'+github+'">GitHub</a>'+
         '</div>'+
     '</div>'+
-  '</div>"'
+  '</div>'
 
   $("#projects").append(newProject);
 }
